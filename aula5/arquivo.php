@@ -1,5 +1,5 @@
 <?php
-    $arquivo = fopen("arquivos/arquivo.txt", "r");
+    $arquivo = fopen("arquivos/ler.arquivo.txt", "r");
 
     while(!feof($arquivo)) {
         $linha = fgets($arquivo);
