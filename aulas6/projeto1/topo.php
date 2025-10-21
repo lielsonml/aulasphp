@@ -1,2 +1,2 @@
 <?php
-echo "<h3>Topo do Site</h3>";
+echo "<h1>Topo do Site</h1>";
