@@ -8,13 +8,14 @@
     }else{
         echo "<H2> Envio de dados não permitidos</H2>";
     }
-    $sql = "INSERT INTO clientes (nome, cidade, estado) VALUES ('$cliente', '$cidade', '$estado')";
+    $sql = "INSERT INTO clientes (cliente, cidade, estado) VALUES ('$cliente', '$cidade', '$estado')";
 
-    $insert = mysqli_query($conexao, $sql);
+        if (mysqli_query($conexao, $sql)) {
+            echo "Novo cliente cadastrado com sucesso!";
+            echo "<p><a href='?pg=clientes-admin'>Voltar para Administração de Clientes</a></p>";
+        } else {
+            echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
+        }
+    
 
-if($insert){
-    echo "<H2> Cliente cadastrado com sucesso! </H2>";
-    echo "<a href='?pg=clientes-admin'>Voltar</a>";
-}else{
-    echo "<H2> Erro ao cadastrar cliente. </H2>";
-}
+    mysqli_close($conexao);

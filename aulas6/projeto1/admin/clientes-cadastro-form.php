@@ -4,7 +4,7 @@
         <input type="text" name="cliente" required><br>
         
         <label">Cidade:</label>
-        <input type="email" name="cidade" required><br>
+        <input type="text" name="cidade" required><br>
         
         <label>Estado:</label>
         <input type="text" name="estado"><br><br>
