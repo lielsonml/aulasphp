@@ -10,7 +10,7 @@ echo "Painel administrativo";
 <?php   
 // área de conteúdo
 if(empty($_SERVER['QUERY_STRING'])){
-    $var = "pricipal";
+    $var = "principal";
     include_once "$var.php";
 }elseif($_GET['pg']){
     $pg = $_GET['pg'];
