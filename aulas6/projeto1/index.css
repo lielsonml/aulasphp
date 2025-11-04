@@ -1,0 +1,136 @@
+/* Estilos gerais */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 100px; /* Espaço para o footer */
+    padding-top: 80px; /* Espaço para o header fixo */
+}
+
+/* Estilos do Header */
+.main-header {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-nav i {
+    font-size: 16px;
+}
+
+/* Estilos do Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 120px; /* Aumenta o espaço para o footer em telas menores */
+        padding-top: 60px;
+    }
+
+    .header-container {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .main-nav ul {
+        gap: 10px;
+    }
+
+    .main-nav a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .main-nav i {
+        font-size: 14px;
+    }
+
+    /* Para telas muito pequenas, esconde o texto e mostra só ícones */
+    @media (max-width: 480px) {
+        .main-nav span {
+            display: none;
+        }
+        
+        .main-nav a {
+            padding: 8px;
+        }
+
+        .main-nav i {
+            font-size: 18px;
+        }
+    }
+}
