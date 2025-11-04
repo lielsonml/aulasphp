@@ -5,7 +5,7 @@ echo "Painel administrativo";
     <a href="index.php">ÍNICIO</a>
     <a href="?pg=clientes-admin">Clientes</a>
     <a href="?pg=paginas-admin">Administrar Paginas</a>
-    <a href="?pg=contato-admin">Adiministrar Contatos</a>
+    <a href="?pg=contato-admin">Administrar Contatos</a>
 </nav>
 <?php   
 // área de conteúdo
