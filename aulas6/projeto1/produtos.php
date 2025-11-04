@@ -2,7 +2,8 @@
 require_once 'admin/config.inc.php';
 
 echo "<div class='produtos-container'>";
-echo "<h2>Nossos Produtos</h2>";
+echo "<div class='h2produtos'<h2>Nossos Produtos</div>";
+
 
 $sql = "SELECT * FROM produtos ORDER BY nome";
 $resultado = mysqli_query($conexao, $sql);
@@ -14,6 +15,7 @@ if (mysqli_num_rows($resultado) > 0) {
         echo "<h3>" . htmlspecialchars($produto['nome']) . "</h3>";
         echo "<p class='descricao'>" . htmlspecialchars($produto['descricao']) . "</p>";
         echo "<p class='preco'>Preço: R$ " . number_format((float)$produto['preco'], 2, ',', '.') . "</p>";
+        echo "<hr>";
         echo "</div>";
     }
     echo "</div>";

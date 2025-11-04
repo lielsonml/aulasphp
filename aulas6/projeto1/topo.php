@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso Site</title>
+    <title>Meu Site</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <h1>Nosso Site</h1>
+                <h1>Meu Site</h1>
             </div>
             <nav class="main-nav">
                 <ul>
